@@ -32,6 +32,12 @@ class ChildB(BaseModel):
     relation_b = models.ForeignKey(RelationB, on_delete=models.CASCADE)
 ```
 
+아래는 마이그레이션한 이후 테이블 컬럼을 보여주는 예시입니다:
+
+![alt text](<static/Screenshot 2024-08-12 at 23.14.24.png>)
+
+![alt text](<static/Screenshot 2024-08-12 at 23.14.37.png>)
+
 아래는 상속받은 자식 모델이 연관테이블을 사용하는 사례를 보여줍니다.
 
 ```python
